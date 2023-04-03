@@ -1,0 +1,505 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-size: cover;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/Animals_Cats_Cat_hunting_030223_.jpg");
+    padding-top: 80px;
+    padding-bottom: 450px;
+}
+
+.navdiv{
+    display: flex;
+    max-width: 1720px;
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img{
+    width: 180px;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-list-item{
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 48px;
+}
+
+.herothing{
+    display: flex;
+    max-width: 1620px;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 350px;
+}
+
+.second-thing{
+    display: flex;
+    max-width: 1620px;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 350px;
+}
+
+.second-thing{
+    display: none;
+}
+
+.thing-heading{
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 62px;
+}
+
+.par-text{
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    width: 1250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.thing-bttn:hover{
+    transition: 0,9s;
+    padding: 15px 20px;
+    color: black;
+    background-color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    border: 4px solid white;
+    cursor: pointer;
+}
+
+.thing-bttn{
+    padding: 15px 20px;
+    color: white;
+    background-color: transparent;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    border: 4px solid white;
+}
+
+.thing-arrow{
+    width: 25px;
+    cursor: pointer;
+}
+
+.second-arrow{
+    width: 25px;
+    cursor: pointer;
+}
+
+.next-thing-arrow{
+    width: 25px;
+    cursor: pointer;
+}
+
+.next-second-arrow{
+    width: 25px;
+    cursor: pointer;
+}
+
+.services{
+    text-align: center;
+    max-width: 1720px;
+    width: 100%;
+    margin: 0px auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.top-services{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.bottom-sevices{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service{
+    max-width: 550px;
+    width: 100%;
+}
+
+.service-heading{
+    color: #5A5959;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.service-img{
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+.service-text{
+    color: #5A5959;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.devider{
+    text-align: center;
+    max-width: 1550px;
+    width: 100%;
+    margin: 0px auto 50px auto;
+}
+
+.top-devider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.devider-heading{
+    color: #06BA84;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.green-mini-line{
+    background-color: #06BA84;
+    width: 400px;
+    height: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.slider{
+    max-width: 1900px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.slideble{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-image{
+    width: 473px;
+    height: 470px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-image:nth-child(1){
+    background-image: url("../img/shutterstock_251248843.jpg");
+}
+.slider-image:nth-child(2){
+    background-image: url("../img/GPyHjxPE-5c3Ww3rrKNQiQNHYW6UwhMAE42axP4wn3zkB8FvKKOQNyWjMF5GIwM896Tbn06T.jpg");
+}
+.slider-image:nth-child(3){
+    background-image: url("../img/tvaPd7VVWWs.jpg");
+}
+.slider-image:nth-child(4){
+    background-image: url("../img/358735-domashnie-kotiata-33.jpg");
+}
+
+.slider-heading{
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.slider-text{
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* .slider-content{
+    opacity: 0;
+} */
+
+/* .slider-content:hover{
+    opacity: 1;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0.3);
+    width: 473px;
+    height: 320px;
+    padding-top: 150px;
+} */
+
+.slider-content{
+    opacity: 1;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0.3);
+    width: 473px;
+    height: 320px;
+    padding-top: 150px;
+}
+
+.bttns{
+    display: flex;
+    max-width: 300px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 15px auto 0px auto;
+    align-items: center;
+}
+
+.filled{
+    background-color: #06BA84;
+    width: 90px;
+    height: 16px;
+}
+
+.hollow{
+    background-color: transparent;
+    border: 3px solid #06BA84;
+    width: 84px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.slider-content{
+    height: 100%;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.logo-img{
+    cursor: pointer;
+}
+
+.give-a-house{
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #EEEEEE;
+    margin-bottom: 50px;
+}
+
+.give-bttn{
+    padding: 15px 20px;
+    color: #06BA84;
+    background-color: transparent;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    border: 4px solid #06BA84;
+}
+
+.give-bttn:hover{
+    transition: 0,9s;
+    padding: 15px 20px;
+    color: white;
+    background-color: #06BA84;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    border: 4px solid #06BA84;
+    cursor: pointer;
+}
+
+.give-a-house-text{
+    margin-bottom: 30px;
+    width: 1550px;
+    margin: 20px auto;
+}
+
+.breeds{
+    display: block;
+    max-width: 1750px;
+    width: 100%;
+    margin: 0px auto;
+    padding-bottom: 50px;
+}
+
+.breeds-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.breeds-bot{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cat-picture{
+    width: 520px;
+    height: 300px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cat-picture-bot{
+    width: 520px;
+    height: 300px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cat-picture:nth-child(1){
+    background-image: url("../img/1628835036_197-p-foto-manchkina-kota-211.jpg");
+}
+
+.cat-picture:nth-child(2){
+    background-image: url("../img/1633829111_40-pro-dachnikov-com-p-britanskie-koshki-domashnie-foto-40.jpg");
+}
+
+.cat-picture:nth-child(3){
+    background-image: url("../img/yJz9PNpnwYKvMFOighCwpKnJ7AbhDlnNZSkNpR9ZgThy_BUgxbo8N5YrL1FoE7CQmsm8qdsB.jpg");
+}
+
+.cat-picture-bot:nth-child(1){
+    background-image: url("../img/20-amerikanskij-bobtejl-bolezni-min.jpg");
+}
+
+.cat-picture-bot:nth-child(2){
+    background-image: url("../img/wallpapersden.com_american-curl-cat-fluffy_2248x2248.jpg");
+}
+
+.cat-picture-bot:nth-child(3){
+    background-image: url("../img/1628720366_30-p-porodi-kotov-foto-s-nazvaniyami-31.jpg");
+}
+
+.cat-content{
+    opacity: 0;
+    height: 100%;
+}
+
+.cat-content:hover{
+    opacity: 1;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0.3);
+    width: 520px;
+    height: 170px;
+    padding-top: 130px;
+}
+
+footer{
+    background-color: #343434;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.footer-container{
+    display: block;
+    max-width: 1750px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.about-and-contacts-block{
+    display: flex;
+}
+
+.footer-heading{
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.footer-heading span{
+    color: #06BA84;
+}
+
+.footer-text span{
+    color: #06BA84;
+}
+
+.footer-text{
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.mini-devider{
+    width: 100%;
+    background-color: #707070;
+    height: 3px;
+    margin: 20px 0;
+}
+
+.first-about-us{
+    margin-right: 100px;
+}
+
+.second-about-us{
+    margin-right: 300px;
+}
+
+.micro-footer-div{
+    background-color: #707070;
+    height: 2px;
+    margin: 15px 0;
+    width: 350px;
+}
+
+.top-email{
+    margin: 15px 0;
+}
+
+.social-media{
+    margin-top: 15px;
+}
+
+.social-media-icon{
+    width: 60px;
+    cursor: pointer;
+}
+
+.twitter-icon{
+    margin-left: 20px;
+    margin-right: 20px;
+}
