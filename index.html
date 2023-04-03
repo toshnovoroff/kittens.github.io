@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/simple-adaptive-slider.css">
+    <style>
+    /* стили для элемента body */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    }
+
+    /* дополнительные стили для этого примера */
+    .itcss__items {
+      counter-reset: slide;
+    }
+
+    .itcss__item {
+      counter-increment: slide;
+    }
+
+    .itcss__item>div::before {
+      content: counter(slide);
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: bold;
+    }
+    </style>
+    <!-- Подключаем JS слайдера -->
+    <script defer src="simple-adaptive-slider.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // активация слайдера
+      new ItcSimpleSlider('.itcss', {
+        loop: true,
+        autoplay: true,
+        swipe: true
+      });
+    });
+    </script>
+    <title>Коты</title>
+</head>
+<body>
+    <header>
+        <section class="hero">
+            <nav>
+                <div class="navdiv">
+                    <div class="nav-left-part">
+                        <img class="logo-img" src="img/catcare.svg" alt="Logo">
+                    </div>
+                    <div class="nav-right-part">
+                        <ul class="nav-list">
+                            <li class="nav-list-item"><a class="nav-link" href="#">HOME</a></li>
+                            <li class="nav-list-item"><a class="nav-link" href="#">PRICES</a></li>
+                            <li class="nav-list-item"><a class="nav-link" href="#">ABOUT US</a></li>
+                            <li class="nav-list-item"><a class="nav-link" href="#">SERVICES</a></li>
+                            <li class="nav-list-item"><a class="nav-link" href="#">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="herothing">
+                <img class="thing-arrow" src="img/Vector2.svg" alt="Left-arrow">
+                <div class="mid-hero-content">
+                    <h1 class="thing-heading">Lorem ipsum delor sit amet</h1>
+                    <p class="par-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est
+                        notare quam littera gothica, quam nunc putamus parum claram, anteposueritlitterarum.</p>
+                    <button class="thing-bttn">Learn more</button>
+                </div>
+                <img class="next-thing-arrow" src="img/Vector1.svg" alt="Right-arrow">
+            </div>
+            <div class="second-thing">
+                <img class="second-arrow" src="img/Vector2.svg" alt="Left-arrow">
+                <div class="mid-hero-content">
+                    <h1 class="thing-heading">Lorem ipsum delor sit amet</h1>
+                    <p class="par-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est
+                        notare quam littera gothica, quam nunc putamus parum claram, anteposueritlitterarum.</p>
+                    <button class="thing-bttn">Subscribe</button>
+                </div>
+                <img class="next-second-arrow" src="img/Vector1.svg" alt="Right-arrow">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="services">
+            <div class="top-services">
+                <div class="service">
+                    <img class="service-img" src="img/home.svg" alt="Kennels">
+                    <h2 class="service-heading">Cat BOARDING KENNELS</h2>
+                    <p class="service-text">Eodem modo typi, qui nunc nobis videntur parum clari, 
+                        fiant sollemnes in futurum. Humanitatis per
+                        seacula quarta decima et quinta decima.</p>
+                </div>
+                <div class="service">
+                    <img class="service-img" src="img/rain.svg" alt="Grooming">
+                    <h2 class="service-heading">Cat GROOMING</h2>
+                    <p class="service-text">Eodem modo typi, qui nunc nobis videntur parum clari, 
+                        fiant sollemnes in futurum. Humanitatis per
+                        seacula quarta decima et quinta decima.</p>
+                </div>
+                <div class="service">
+                    <img class="service-img" src="img/vet.svg" alt="Adaptation">
+                    <h2 class="service-heading">Adoption Center</h2>
+                    <p class="service-text">Eodem modo typi, qui nunc nobis videntur parum clari, 
+                        fiant sollemnes in futurum. Humanitatis per
+                        seacula quarta decima et quinta decima.</p>
+                </div>
+            </div>
+            <div class="bottom-sevices">
+                <div class="service">
+                    <img class="service-img" src="img/cattree.svg" alt="Games">
+                    <h2 class="service-heading">Cat Games</h2>
+                    <p class="service-text">Eodem modo typi, qui nunc nobis videntur parum clari, 
+                        fiant sollemnes in futurum. Humanitatis per
+                        seacula quarta decima et quinta decima.</p>
+                </div>
+                <div class="service">
+                    <img class="service-img" src="img/hands.svg" alt="Care">
+                    <h2 class="service-heading">Care For Cats</h2>
+                    <p class="service-text">Eodem modo typi, qui nunc nobis videntur parum clari, 
+                        fiant sollemnes in futurum. Humanitatis per
+                        seacula quarta decima et quinta decima.</p>
+                </div>
+                <div class="service">
+                    <img class="service-img" src="img/doctor.svg" alt="Treatment">
+                    <h2 class="service-heading">Treatment Fot Cats</h2>
+                    <p class="service-text">Eodem modo typi, qui nunc nobis videntur parum clari, 
+                        fiant sollemnes in futurum. Humanitatis per
+                        seacula quarta decima et quinta decima.</p>
+                </div>
+            </div>
+        </section>
+        <section class="devider">
+            <div class="top-devider">
+                <div class="green-mini-line"></div>
+                <h2 class="devider-heading">Cats that are waiting you</h2>
+                <div class="green-mini-line"></div>
+            </div>
+            <p class="service-text">Lorem Ipsum is simply dummy text ofthe printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley oftype and scrambled itto make a type specimen book.</p>
+        </section>
+        <section class="slider">
+            <!-- <div class="slideble">
+                <div class="slider-image">
+                    <div class="slider-content">
+                        <h2 class="slider-heading">Miss Frece</h2>
+                        <p class="slider-text">Lorem Ipsum is simply dummy
+                            text <br> ofthe printing and typesetting industry.</p>
+                        <button class="thing-bttn">Learn more</button>
+                    </div>
+                </div>
+                <div class="slider-image">
+                    <div class="slider-content">
+                        <h2 class="slider-heading">Miss Frece</h2>
+                        <p class="slider-text">Lorem Ipsum is simply dummy
+                            text <br> ofthe printing and typesetting industry.</p>
+                        <button class="thing-bttn">Learn more</button>
+                    </div>
+                </div>
+                <div class="slider-image">
+                    <div class="slider-content">
+                        <h2 class="slider-heading">Miss Frece</h2>
+                        <p class="slider-text">Lorem Ipsum is simply dummy
+                            text <br> ofthe printing and typesetting industry.</p>
+                        <button class="thing-bttn">Learn more</button>
+                    </div>
+                </div>
+                <div class="slider-image">
+                    <div class="slider-content">
+                        <h2 class="slider-heading">Miss Frece</h2>
+                        <p class="slider-text">Lorem Ipsum is simply dummy
+                            text <br> ofthe printing and typesetting industry.</p>
+                        <button class="thing-bttn">Learn more</button>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="bttns">
+                <div class="filled"></div>
+                <div class="hollow"></div>
+                <div class="hollow"></div>
+            </div> -->
+            <div class="itcss">
+                <div class="itcss__wrapper">
+                  <div class="itcss__items">
+                    <div class="itcss__item">
+                        <div class="slideble">
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itcss__item">
+                        <div class="slideble">
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itcss__item">
+                        <div class="slideble">
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="itcss__item">
+                        <div class="slideble">
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="slider-image">
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Miss Frece</h2>
+                                    <p class="slider-text">Lorem Ipsum is simply dummy
+                                        text <br> ofthe printing and typesetting industry.</p>
+                                    <button class="thing-bttn">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                  </div>
+                </div>
+            </div>
+        </section>
+        <!-- SLIDER -->
+        
+        <!-- SLIDER -->
+        <section class="give-a-house">
+            <img src="img/home.svg" alt="">
+            <h2 class="service-heading">Give the cat a house</h2>
+            <p class="service-text give-a-house-text">Lorem Ipsum is simply dummy text ofthe printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley oftype and scrambled itto make a type specimen book.</p>
+            <button class="give-bttn">Learn more</button>
+        </section>
+        <section class="devider">
+            <div class="top-devider">
+                <div class="green-mini-line"></div>
+                <h2 class="devider-heading">Everyone can find a companion</h2>
+                <div class="green-mini-line"></div>
+            </div>
+            <p class="service-text">Lorem Ipsum is simply dummy text ofthe printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley oftype and scrambled itto make a type specimen book.</p>
+        </section>
+        <section class="breeds">
+            <div class="breeds-top">
+                <div class="cat-picture">
+                    <div class="cat-content">
+                        <h2 class="slider-heading">Munchkins</h2>
+                    </div>
+                </div>
+                <div class="cat-picture">
+                    <div class="cat-content">
+                        <h2 class="slider-heading">British Shorthair</h2>
+                    </div>
+                </div>
+                <div class="cat-picture">
+                    <div class="cat-content">
+                        <h2 class="slider-heading">Bengali</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="breeds-bot">
+                <div class="cat-picture-bot">
+                    <div class="cat-content">
+                        <h2 class="slider-heading">American bobtail</h2>
+                    </div>
+                </div>
+                <div class="cat-picture-bot">
+                    <div class="cat-content">
+                        <h2 class="slider-heading">American curl</h2>
+                    </div>
+                </div>
+                <div class="cat-picture-bot">
+                    <div class="cat-content">
+                        <h2 class="slider-heading">Bombay</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="about-and-contacts-block">
+                <div class="first-about-us">
+                    <h2 class="footer-heading"><span>A</span>bout us</h2>
+                    <p class="footer-text about-us-text">Eodem modo typi, qui nunc nobis<br>
+                        videntur parum clari,<br>
+                        fiant sollemnes in futurum.<br>
+                        Humanitatis per<br>
+                        seacula quarta decima et quinta<br>
+                        decima.</p>
+                        <div class="micro-footer-div"></div>
+                    <p class="footer-text">Humanitatis per<br>
+                        seacula quarta decima et quinta decima.</p>
+                </div>
+                <div class="second-about-us">
+                    <h2 class="footer-heading"><span>A</span>bout us</h2>
+                    <p class="footer-text about-us-text">Eodem modo typi, qui nunc nobis<br>
+                        videntur parum clari,<br>
+                        fiant sollemnes in futurum.<br>
+                        Humanitatis per<br>
+                        seacula quarta decima et quinta<br>
+                        decima.</p>
+                    <div class="micro-footer-div"></div>
+                    <p class="footer-text">Humanitatis per<br>
+                        seacula quarta decima et quinta decima.</p>
+                </div>
+                <div class="contact-us">
+                    <h2 class="footer-heading"><span>C</span>ontact us</h2>
+                    <p class="footer-text">Claritas est etiam processus dynamicus,<br>
+                        qui sequitur mutationem consuetudium lectorum.</p>
+                    <div class="social-media">
+                        <img class="social-media-icon" src="img/facebook.svg" alt="Facebook">
+                        <img class="social-media-icon twitter-icon" src="img/twitter.svg" alt="Twitter">
+                        <img class="social-media-icon" src="img/instagram-_1_ 1.svg" alt="Instagram">
+                    </div>
+                    <p class="footer-text top-email"><span>E</span>mail: CareCats@yahoo.com</p>
+                    <p class="footer-text"><span>E</span>mail: CareCatsHelp@yahoo.com</p>
+                </div>
+            </div>
+            <div class="mini-devider"></div>
+            <p class="footer-text">© <span>Copyright</span> 2017. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
